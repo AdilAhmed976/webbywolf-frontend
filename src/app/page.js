@@ -6,10 +6,11 @@ import { Typography } from "@/components/ui/typography";
 import BikeFeatureSection from "@/sections/bike-feature-section";
 import FeatureSection from "@/sections/feature-section";
 import HeroSection from "@/sections/hero-section";
+import Customers from "@/sections/our-customers";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <HeroSection />
       <BikeFeatureSection />
 
@@ -23,6 +24,8 @@ export default function Home() {
           "Lorem ipsum dolor sit amet consectetur. Volutpat in dictum nec condimentum ultrices non. Ornare semper in tincidunt pellentesque cras mauris in vitae. At viverra quis eu malesuada vel et porttitor. Nulla luctus quam lacus lacus non at. Tincidunt morbi feugiat a pulvinar euismod natoque nulla ligula. Tincidunt cursus vitae leo.",
         ]}
       />
-    </div>
+
+      <Customers />
+    </>
   );
 }

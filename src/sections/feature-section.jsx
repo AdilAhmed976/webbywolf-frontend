@@ -29,7 +29,7 @@ const features = [
 
 const FeatureSection = () => {
   return (
-    <div className="my-20 md:my-30">
+    <div className="my-5 sm:20 lg:my-30">
       <section className="bg-white shadow-custom  ml-0 md:ml-20 space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Left Content */}

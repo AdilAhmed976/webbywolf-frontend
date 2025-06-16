@@ -24,7 +24,7 @@ const features = [
 const BikeFeatureSection = () => {
   return (
     <div
-      className="my-20 md:my-30 p-0 md:ml-22"
+      className="my-5 sm:20 lg:my-30 p-0 md:ml-22"
       style={{ boxShadow: "0px 4px 25px 0px #00000026" }}
     >
       <section className="bg-white shadow-custom mx-10 space-y-4">
