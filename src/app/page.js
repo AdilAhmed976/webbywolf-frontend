@@ -8,6 +8,7 @@ import BlogSection from "@/sections/blog-section";
 import FeatureSection from "@/sections/feature-section";
 import HeroSection from "@/sections/hero-section";
 import Customers from "@/sections/our-customers";
+import SubmitRequestForm from "@/sections/submit-request-form";
 
 export default function Home() {
   return (
@@ -34,6 +35,8 @@ export default function Home() {
         imageSrc={"music-background.png"}
         heading="dolor sit amet consectetur. Quis adipiscing purus egestas aliquam viverra mi. dolor sit amet consectetur. Quis adipiscing"
       />
+
+      <SubmitRequestForm />
     </>
   );
 }

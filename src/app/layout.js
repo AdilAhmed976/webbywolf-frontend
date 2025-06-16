@@ -2,6 +2,7 @@ import { Inter, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { Toaster } from "@/components/ui/sonner";
 
 // Add Inter font
 const inter = Inter({
@@ -30,7 +31,8 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {children}
-        <Footer/>
+        <Toaster position="top-center" richColors={true} />
+        <Footer />
       </body>
     </html>
   );
