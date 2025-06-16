@@ -11,6 +11,7 @@ import FeatureSection from "@/sections/feature-section";
 import HeroSection from "@/sections/hero-section";
 import Customers from "@/sections/our-customers";
 import SubmitRequestForm from "@/sections/submit-request-form";
+import TestimonialSection from "@/sections/testimonials-section";
 import TwoBikersSection from "@/sections/two-bikers-section";
 
 export default function Home() {
@@ -46,6 +47,8 @@ export default function Home() {
       <BikeGallerySection />
 
       <TwoBikersSection />
+
+      <TestimonialSection />
     </>
   );
 }
