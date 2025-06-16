@@ -28,7 +28,7 @@ const features = [
 const TwoBikersSection = () => {
   return (
     <div className="py-10 md:py-40 bg-white shadow-custom space-y-4 ">
-      <section className="bg-[#F8F8F8]">
+      <section className="bg-[#F8F8F8] mr-0 md:mr-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Left Image */}
           <div className="w-full h-full relative">
