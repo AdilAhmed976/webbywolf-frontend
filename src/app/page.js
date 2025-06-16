@@ -4,6 +4,7 @@ import BackgroundCard from "@/components/ui/background-card";
 import { Card } from "@/components/ui/card";
 import { Typography } from "@/components/ui/typography";
 import BikeFeatureSection from "@/sections/bike-feature-section";
+import BlogSection from "@/sections/blog-section";
 import FeatureSection from "@/sections/feature-section";
 import HeroSection from "@/sections/hero-section";
 import Customers from "@/sections/our-customers";
@@ -26,6 +27,7 @@ export default function Home() {
       />
 
       <Customers />
+      <BlogSection/>
     </>
   );
 }
