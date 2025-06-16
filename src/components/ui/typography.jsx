@@ -14,7 +14,7 @@ const textVariants = {
   blockquote: "border-l-4 border-gray-300 pl-4 italic text-text-color",
   code: "font-mono text-sm bg-gray-100 px-1 rounded text-text-color",
   caption: "text-xs text-text-color",
-  label: "text-md font-medium text-primary",
+  label: "text-sm font-medium text-text-color",
   button: "text-sm font-medium uppercase tracking-tight",
 };
 

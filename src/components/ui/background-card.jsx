@@ -1,5 +1,4 @@
 import Image from "next/image";
-import clsx from "clsx";
 import { Typography } from "./typography";
 
 export default function BackgroundCard({ imageSrc, heading, paragraphs = [] }) {
@@ -20,7 +19,7 @@ export default function BackgroundCard({ imageSrc, heading, paragraphs = [] }) {
       {/* Content */}
       <div className="relative z-10 px-6 md:px-16 py-10 text-white max-w-4xl mx-auto flex flex-col gap-4 justify-center h-full">
         {heading && (
-          <Typography type="h2" className={"text-center"}>
+          <Typography type="h2" className={"text-center uppercase"}>
             {heading}
           </Typography>
         )}

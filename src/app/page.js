@@ -27,7 +27,13 @@ export default function Home() {
       />
 
       <Customers />
-      <BlogSection/>
+
+      <BlogSection />
+
+      <BackgroundCard
+        imageSrc={"music-background.png"}
+        heading="dolor sit amet consectetur. Quis adipiscing purus egestas aliquam viverra mi. dolor sit amet consectetur. Quis adipiscing"
+      />
     </>
   );
 }
