@@ -71,7 +71,7 @@ const SubmitRequestForm = () => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-6 py-20">
+    <div className="max-w-5xl mx-auto p-6 py-20">
       <Typography type="h3" className={"text-center text-[#22222] my-10 md:my-15 lg:my-20"}>
         REQUEST A QUOTE
         </Typography> 
@@ -247,7 +247,7 @@ const SubmitRequestForm = () => {
                 <FormControl>
                   <Textarea
                     placeholder="Tell us a little bit about your project"
-                    className="resize-none"
+                    className="resize-none h-40"
                     {...field}
                   />
                 </FormControl>
