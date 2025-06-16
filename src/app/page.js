@@ -4,6 +4,7 @@ import BackgroundCard from "@/components/ui/background-card";
 import { Card } from "@/components/ui/card";
 import { Typography } from "@/components/ui/typography";
 import BikeFeatureSection from "@/sections/bike-feature-section";
+import BikeGallerySection from "@/sections/bike-gallery-section";
 import BlogSection from "@/sections/blog-section";
 import DownloadAppSection from "@/sections/download-app-section";
 import FeatureSection from "@/sections/feature-section";
@@ -40,6 +41,8 @@ export default function Home() {
       <SubmitRequestForm />
 
       <DownloadAppSection />
+
+      <BikeGallerySection />
     </>
   );
 }
