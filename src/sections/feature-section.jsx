@@ -8,20 +8,29 @@ import Image from "next/image";
 
 const features = [
   {
-    text: "Lorem ipsum dolor sit amet consectetur. Vestibulum ornare fermentum feugiat.",
+    title:
+      "Lorem ipsum dolor sit amet consectetur. Volutpat hac morbi egestas.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Eros egestas et arcu eu non viverra. Risus quam mattis senectus vitae interdum odio ornare gravida vestibulum. Donec turpis nulla felis mauris eu donec. Ipsum sit ut tortor.",
   },
   {
-    text: "Lorem ipsum dolor sit amet consectetur. Dictum at ac tellus faucibus urna ullamcorper id dui cursus. Venenatis.",
+    title:
+      "Lorem ipsum dolor sit amet consectetur. Volutpat hac morbi egestas.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Eros egestas et arcu eu non viverra. Risus quam mattis senectus vitae interdum odio ornare gravida vestibulum. Donec turpis nulla felis mauris eu donec. Ipsum sit ut tortor.",
   },
   {
-    text: "Lorem ipsum dolor sit amet consectetur. Vestibulum nisl morbi metus gravida eu facilisi enim. Ut diam auctor tortor tincidunt.",
+    title:
+      "Lorem ipsum dolor sit amet consectetur. Volutpat hac morbi egestas.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Eros egestas et arcu eu non viverra. Risus quam mattis senectus vitae interdum odio ornare gravida vestibulum. Donec turpis nulla felis mauris eu donec. Ipsum sit ut tortor.",
   },
 ];
 
 const FeatureSection = () => {
   return (
     <div className="my-20 md:my-30">
-      <section className="bg-white shadow-custom mx-10 space-y-4">
+      <section className="bg-white shadow-custom  ml-0 md:ml-20 space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Left Content */}
           <div className="flex flex-col justify-between p-8">
@@ -38,52 +47,47 @@ const FeatureSection = () => {
               </Typography>
 
               {/* Features List */}
-              <div className="space-y-4 my-4">
+              <div className="space-y-10 my-4 ">
                 {features.map((item, idx) => (
                   <div key={idx} className="flex gap-4 items-center">
-                   
-
-                    <Typography type="label">{item.text}</Typography>
+                    <Image
+                      src={"/images/icon.png"}
+                      alt={item.alt || "feature Image"}
+                      width={36}
+                      height={36}
+                      className="object-cover"
+                    />
+                    <div>
+                      <Typography className="font-[600]">
+                        {item.title}
+                      </Typography>
+                      <Typography className={"font-[400]"}>
+                        {item.description}
+                      </Typography>
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
-
-            {/* Bottom CTA
-              <div className="flex items-center gap-6 mt-6">
-                <Button>Lorem Ipsum</Button>
-                <Button
-                  variant={"outline"}
-                  className={"text-primary border-none"}
-                >
-                  <Phone /> 123456789
-                </Button>
-              </div> */}
           </div>
 
           {/* Right Image */}
-          <div className="w-full h-full md:pr-4">
+          <div className="w-full h-full">
             <Image
-              src={`/Images/bike.png`}
+              src={`/Images/person.png`}
               alt="Motorbike"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
               width={"500"}
               height={"500"}
             />
           </div>
         </div>
-        {/* Bottom CTA */}
-        <div className="flex items-center gap-6 mt-6">
-          <Button>Lorem Ipsum</Button>
-          <Button variant={"outline"} className={"text-primary border-none"}>
-            <Phone /> 123456789
-          </Button>
-        </div>
+
         {/* Gradient Footer Line */}
+        <div className="w-full mt-8 flex justify-end">
+          <Gradient className="w-full md:w-[94%]" />
+        </div>
       </section>
-      <div className="w-full md:w-[96%] mt-8">
-        <Gradient />
-      </div>
     </div>
   );
 };
