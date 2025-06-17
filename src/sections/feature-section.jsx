@@ -32,7 +32,7 @@ const features = [
 
 const FeatureSection = () => {
   return (
-    <AnimatedCard position="right">
+    // <AnimatedCard position="right">
       <div className="my-6 sm:my-20 lg:my-30">
         <section className="bg-white shadow-custom ml-0 md:ml-20 space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -84,7 +84,7 @@ const FeatureSection = () => {
 
             {/* Right Image */}
             <AnimatedListItem
-              position="left"
+              position="right"
               index={2}
               className="flex flex-col md:flex-row gap-4 items-start md:items-center"
             >
@@ -109,7 +109,7 @@ const FeatureSection = () => {
           </div>
         </section>
       </div>
-    </AnimatedCard>
+    // </AnimatedCard>
   );
 };
 

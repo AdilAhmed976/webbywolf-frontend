@@ -29,7 +29,7 @@ const features = [
 
 const BikeFeatureSection = () => {
   return (
-    <AnimatedCard position="left">
+    // <AnimatedCard position="left">
       <div
         className="my-5 sm:20 lg:my-30 p-0 md:ml-22"
         style={{ boxShadow: "0px 4px 25px 0px #00000026" }}
@@ -117,7 +117,7 @@ const BikeFeatureSection = () => {
           <Gradient />
         </div>
       </div>
-    </AnimatedCard>
+    // </AnimatedCard>
   );
 };
 

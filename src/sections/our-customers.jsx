@@ -1,3 +1,4 @@
+import AnimatedCard from "@/components/animation/animated-card";
 import { Card } from "@/components/ui/card";
 import { Typography } from "@/components/ui/typography";
 import Image from "next/image";
@@ -32,14 +33,19 @@ const Customers = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 md:grid-cols-4 gap-6 grid-items-center">
             {brands.map((brand, index) => (
               <div key={index} className="group relative">
-                <Image
-                  src={`/images/${brand?.image}`}
-                  width={130}
-                  height={130}
-                  className="object-contain"
-                  priority
-                  alt={`customers-${index}`}
-                />
+                <AnimatedCard
+                  index={index}
+                  position={index % 2 === 0 ? "bottom" : "top"}
+                >
+                  <Image
+                    src={`/images/${brand?.image}`}
+                    width={130}
+                    height={130}
+                    className="object-contain"
+                    priority
+                    alt={`customers-${index}`}
+                  />
+                </AnimatedCard>
               </div>
             ))}
           </div>
