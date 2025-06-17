@@ -1,33 +1,37 @@
 import {
   leftCardVariants,
+  leftListItemVariants,
+  listItemVariants,
   rightCardVariants,
+  rightListItemVariants,
 } from "@/common/animation-variants";
 import React from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
-const AnimatedListItem = ({
+const AnimatedCard = ({
   position = "right",
   index = 0,
   className,
   children,
-  transitionDuration = 0.2,
   delayStep = 0.2,
   once = false,
   ...rest
 }) => {
   const selectedPosition =
-    position === "right" ? rightCardVariants : leftCardVariants;
+    position === "right" ? rightListItemVariants : leftListItemVariants;
 
   return (
     <motion.div
       initial="hidden"
       whileInView="visible"
       exit="exit"
-      viewport={{ once, amount: 0.4 }}
+      viewport={{ once, amount: 0.3 }}
       variants={selectedPosition}
-      transition={{ duration: transitionDuration, delay: index * delayStep }}
-      className={cn("flex", className)}
+      transition={{
+        delay: index * delayStep,
+      }}
+      className={cn("", className)}
       {...rest}
     >
       {children}
@@ -35,4 +39,4 @@ const AnimatedListItem = ({
   );
 };
 
-export default AnimatedListItem;
+export default AnimatedCard;
