@@ -5,6 +5,9 @@ import Gradient from "@/components/ui/gradient";
 import { Typography } from "@/components/ui/typography";
 import { Phone } from "lucide-react";
 import Image from "next/image";
+import { AnimatePresence, motion } from "motion/react";
+import { cardVariants, listItemVariants } from "@/common/animation-variants";
+import AnimatedListItem from "@/components/animation/animated-list-item";
 
 const features = [
   {
@@ -49,20 +52,22 @@ const BikeFeatureSection = () => {
               {/* Features List */}
               <div className="space-y-4 my-4">
                 {features.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="flex flex-col items-start md:items-center md:flex-row gap-4 items-center"
-                  >
-                    <Image
-                      src={item.Image}
-                      alt={item.alt || "feature Image"}
-                      width={146}
-                      height={146}
-                      className="object-cover"
-                      priority
-                    />
-                    <Typography type="label">{item.text}</Typography>
-                  </div>
+                  <AnimatePresence key={idx + item.text}>
+                    <AnimatedListItem
+                      index={idx}
+                      className="flex flex-col md:flex-row gap-4 items-start md:items-center"
+                    >
+                      <Image
+                        src={item.Image}
+                        alt={item.alt || "feature Image"}
+                        width={146}
+                        height={146}
+                        className="object-cover"
+                        priority
+                      />
+                      <Typography type="label">{item.text}</Typography>
+                    </AnimatedListItem>
+                  </AnimatePresence>
                 ))}
               </div>
             </div>
