@@ -42,7 +42,7 @@ const TwoBikersSection = () => {
             />
           </div>
           {/* Right Content */}
-          <div className="flex flex-col justify-between p-8">
+          <div className="flex flex-col justify-between p-6 md:p-8">
             <div className="space-y-4">
               <Typography type="h5" className={"text-primary"}>
                 Lorem ipsum dolor sit

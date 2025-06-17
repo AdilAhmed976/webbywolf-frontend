@@ -208,8 +208,8 @@ const TestimonialSection = () => {
                     <Image
                       src={testimonial.image}
                       alt={testimonial.name}
-                      width={40}
-                      height={40}
+                      width={80}
+                      height={80}
                       className="rounded-full h-[60px] w-[60px] object-cover"
                       priority
                     />

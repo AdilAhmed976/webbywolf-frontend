@@ -46,7 +46,7 @@ export const faqs = [
 const FAQSection = () => {
   const [value, setValue] = useState(`question-1`);
   return (
-    <div className="flex items-center justify-center p-8 md:p-20">
+    <div className="flex items-center justify-center p-6 md:p-20">
       <div className="w-full">
         <Typography type="h2" className={"my-10"}>
           FREQUENTLY ASKED QUESTIONS (FAQs)

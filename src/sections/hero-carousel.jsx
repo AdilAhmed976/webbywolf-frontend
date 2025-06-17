@@ -38,7 +38,7 @@ const HeroCarousel = () => {
   const [current, setCurrent] = useState(0);
 
   return (
-    <section className="w-full px-8 py-8 md:px-12 md:py-12">
+    <section className="w-full px-6 py-6 md:px-12 md:py-12">
       <div className="max-w-6xl mx-auto space-y-4 py-10">
         <Typography type="h2" className="text-gray-900 text-center">
           LOREM IPSUM DOLOR SIT AMET
@@ -53,7 +53,7 @@ const HeroCarousel = () => {
       <Carousel
         opts={{ loop: true }}
         className="relative w-full"
-        onSlideChange={(index) => setCurrent(index)}
+        // onSlideChange={(index) => setCurrent(index)}
       >
         <CarouselContent>
           {slides.map((slide, index) => (

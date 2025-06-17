@@ -10,14 +10,17 @@ const features = [
   {
     Image: "/Images/thumb-1.png",
     text: "Lorem ipsum dolor sit amet consectetur. Vestibulum ornare fermentum feugiat.",
+    alt: "BikeFeatureSection-1",
   },
   {
     Image: "/Images/thumb-2.png",
     text: "Lorem ipsum dolor sit amet consectetur. Dictum at ac tellus faucibus urna ullamcorper id dui cursus. Venenatis.",
+    alt: "BikeFeatureSection-2",
   },
   {
     Image: "/Images/thumb-3.png",
     text: "Lorem ipsum dolor sit amet consectetur. Vestibulum nisl morbi metus gravida eu facilisi enim. Ut diam auctor tortor tincidunt.",
+    alt: "BikeFeatureSection-3",
   },
 ];
 
@@ -27,10 +30,10 @@ const BikeFeatureSection = () => {
       className="my-5 sm:20 lg:my-30 p-0 md:ml-22"
       style={{ boxShadow: "0px 4px 25px 0px #00000026" }}
     >
-      <section className="bg-white shadow-custom mx-10 space-y-4">
+      <section className="bg-white shadow-custom md:mx-10 space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Left Content */}
-          <div className="flex flex-col justify-between p-8">
+          <div className="flex flex-col justify-between p-6 md:p-8">
             <div className="space-y-4">
               <Typography type="h5" className={"text-primary"}>
                 Lorem ipsum dolor sit
@@ -46,7 +49,10 @@ const BikeFeatureSection = () => {
               {/* Features List */}
               <div className="space-y-4 my-4">
                 {features.map((item, idx) => (
-                  <div key={idx} className="flex flex-col items-start md:items-center md:flex-row gap-4 items-center">
+                  <div
+                    key={idx}
+                    className="flex flex-col items-start md:items-center md:flex-row gap-4 items-center"
+                  >
                     <Image
                       src={item.Image}
                       alt={item.alt || "feature Image"}
@@ -86,7 +92,7 @@ const BikeFeatureSection = () => {
           </div>
         </div>
         {/* Bottom CTA */}
-        <div className="flex items-center gap-6 mt-6">
+        <div className="flex items-center gap-6 mt-6 p-6">
           <Button>Lorem Ipsum</Button>
           <Button variant={"outline"} className={"text-primary border-none"}>
             <Phone /> 123456789

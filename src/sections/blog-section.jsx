@@ -39,7 +39,7 @@ const blogPosts = [
 
 const BlogSection = () => {
   return (
-    <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-15 lg:px-20 py-5 sm:py-10 md:py-15 lg:py-20 container">
+    <div className="max-w-7xl mx-auto px-6 sm:px-10 md:px-15 lg:px-20 py-6 sm:py-10 md:py-15 lg:py-20 container">
       <Typography type="label">Lorem ipsum dolor sit amet</Typography>
       <Typography type="h2">LOREM IPSUM DOLOR SIT</Typography>
 

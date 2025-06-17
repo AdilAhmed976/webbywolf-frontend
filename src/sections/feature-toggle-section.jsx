@@ -56,7 +56,7 @@ const FeatureToggleSection = () => {
             </Button>
           </div>
           {/* Right Content */}
-          <div className="w-full h-full p-6 md:p-10">
+          <div className="w-full h-full p-0 md:p-10">
             <Image
               src={`/Images/hand-shake.png`}
               alt="2-bikers"

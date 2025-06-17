@@ -38,6 +38,7 @@ const Customers = () => {
                   height={130}
                   className="object-contain"
                   priority
+                  alt={`customers-${index}`}
                 />
               </div>
             ))}

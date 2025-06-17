@@ -11,7 +11,7 @@ const TwoPersonSection = () => {
       <section className="bg-[#F8F8F8]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Left  */}
-          <div className="flex flex-col justify-between pb-20 pt-8 md:pb-40 md:pt-12 px-8 md:px-12 relative">
+          <div className="flex flex-col justify-between pb-20 pt-8 md:pb-40 md:pt-12 px-6 md:px-12 relative">
             <div className="space-y-6">
               <Typography type="h2" className={"text-primary"}>
                 Lorem ipsum dolor sit amet consectetur. Dignissim tellus.

@@ -12,28 +12,31 @@ const features = [
       "Lorem ipsum dolor sit amet consectetur. Volutpat hac morbi egestas.",
     description:
       "Lorem ipsum dolor sit amet consectetur. Eros egestas et arcu eu non viverra. Risus quam mattis senectus vitae interdum odio ornare gravida vestibulum. Donec turpis nulla felis mauris eu donec. Ipsum sit ut tortor.",
+    alt: "FeatureSection-1",
   },
   {
     title:
       "Lorem ipsum dolor sit amet consectetur. Volutpat hac morbi egestas.",
     description:
       "Lorem ipsum dolor sit amet consectetur. Eros egestas et arcu eu non viverra. Risus quam mattis senectus vitae interdum odio ornare gravida vestibulum. Donec turpis nulla felis mauris eu donec. Ipsum sit ut tortor.",
+    alt: "FeatureSection-2",
   },
   {
     title:
       "Lorem ipsum dolor sit amet consectetur. Volutpat hac morbi egestas.",
     description:
       "Lorem ipsum dolor sit amet consectetur. Eros egestas et arcu eu non viverra. Risus quam mattis senectus vitae interdum odio ornare gravida vestibulum. Donec turpis nulla felis mauris eu donec. Ipsum sit ut tortor.",
+    alt: "FeatureSection-3",
   },
 ];
 
 const FeatureSection = () => {
   return (
-    <div className="my-5 sm:20 lg:my-30">
-      <section className="bg-white shadow-custom  ml-0 md:ml-20 space-y-4">
+    <div className="my-6 sm:my-20 lg:my-30">
+      <section className="bg-white shadow-custom ml-0 md:ml-20 space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Left Content */}
-          <div className="flex flex-col justify-between p-0 md:p-8">
+          <div className="flex flex-col justify-between p-6 md:p-8">
             <div className="space-y-4">
               <Typography type="h5" className={"text-primary"}>
                 Lorem ipsum dolor sit
