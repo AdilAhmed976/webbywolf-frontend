@@ -5,8 +5,8 @@ import {
   topCardVariants,
 } from "@/common/animation-variants";
 import React from "react";
-import { motion } from "motion/react";
-import { cn } from "@/lib/utils";
+import { AnimatePresence, motion } from "motion/react";
+import { cn, generateRandomKey } from "@/lib/utils";
 
 const getVariant = (position) => {
   switch (position) {
@@ -35,20 +35,23 @@ const AnimatedCard = ({
   const selectedPosition = getVariant(position);
 
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      exit="exit"
-      viewport={{ once, amount: 0.3 }}
-      variants={selectedPosition}
-      transition={{
-        delay: index * delayStep,
-      }}
-      className={cn("", className)}
-      {...rest}
-    >
-      {children}
-    </motion.div>
+    <AnimatePresence>
+      <motion.div
+        key={generateRandomKey()}
+        initial="hidden"
+        whileInView="visible"
+        exit="exit"
+        viewport={{ once, amount: 0.3 }}
+        variants={selectedPosition}
+        transition={{
+          delay: index * delayStep,
+        }}
+        className={cn("w-full h-full", className)}
+        {...rest}
+      >
+        {children}
+      </motion.div>
+    </AnimatePresence>
   );
 };
 
