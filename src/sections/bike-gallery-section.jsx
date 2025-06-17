@@ -5,7 +5,7 @@ import React from "react";
 
 const BikeGallerySection = () => {
   return (
-    <section className="md:overflow-hidden h-full md:h-[1000px] bg-[#F5F8FE] px-6 py-16 pb-0 md:px-20 flex flex-col lg:flex-row items-start gap-4">
+    <section className="md:overflow-hidden h-full md:h-[900px] bg-[#F5F8FE] px-6 my-15 md:my-20 py-16 pb-0 md:px-20 flex flex-col lg:flex-row items-start gap-4">
       {/* Left Section */}
       <div className="w-full relative md:pt-40">
         <div className="w-full md:absolute top-0 space-y-6">
