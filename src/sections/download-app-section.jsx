@@ -4,8 +4,8 @@ import React from "react";
 
 const DownloadAppSection = () => {
   return (
-    <div className="py-10 md:py-20">
-      <div className="bg-[#F3F3F3] w-full py-12 px-4 md:px-20 flex flex-col md:flex-row items-center justify-between">
+   
+      <div className="bg-[#F3F3F3] w-full pb-0 md:pb-0 py-12 px-4 md:px-20 flex flex-col md:flex-row items-center justify-between">
         <div className="text-center md:text-left max-w-xl space-y-4">
           <Typography className={"text-primary font-lg"}>
             Lorem Ipsum
@@ -47,15 +47,15 @@ const DownloadAppSection = () => {
         <div className="mt-10 md:mt-0 md:ml-12">
           <Image
             src={"/images/hand.png"}
-            alt="Background"
+            alt="hand-png"
             height={1000}
             width={1000}
-            className="object-cover"
+            className="h-full w-full object-cover"
             priority
           />
         </div>
       </div>
-    </div>
+    
   );
 };
 

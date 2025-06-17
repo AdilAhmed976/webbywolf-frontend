@@ -79,7 +79,7 @@ const FeatureSection = () => {
           <div className="w-full h-full">
             <Image
               src={`/Images/person.png`}
-              alt="Motorbike"
+              alt="Motorbike-2"
               className="w-full h-full object-contain"
               width={"500"}
               height={"500"}

@@ -83,7 +83,7 @@ const BikeFeatureSection = () => {
           <div className="w-full h-full md:pr-4">
             <Image
               src={`/Images/bike.png`}
-              alt="Motorbike"
+              alt="Motorbike-rights"
               className="w-full h-full object-cover"
               width={"500"}
               height={"500"}

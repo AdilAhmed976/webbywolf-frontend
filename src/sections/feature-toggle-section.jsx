@@ -59,7 +59,7 @@ const FeatureToggleSection = () => {
           <div className="w-full h-full p-0 md:p-10">
             <Image
               src={`/Images/hand-shake.png`}
-              alt="2-bikers"
+              alt="hand-shake"
               className="w-full h-[400px] object-cover"
               width={500}
               height={500}
