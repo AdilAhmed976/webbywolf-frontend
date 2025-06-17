@@ -23,6 +23,7 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { Typography } from "@/components/ui/typography";
 import { toast } from "sonner";
+import { TextAnimateBlur } from "@/components/animation/text-animate-blur";
 // import { Checkbox } from "@/components/ui/checkbox";
 
 const formSchema = z.object({
@@ -72,9 +73,14 @@ const SubmitRequestForm = () => {
 
   return (
     <div className="max-w-5xl mx-auto p-6 py-20">
-      <Typography type="h3" className={"text-center text-[#22222] my-10 md:my-15 lg:my-20"}>
-        REQUEST A QUOTE
-        </Typography> 
+      <Typography
+        type="h3"
+        className={"text-center text-[#22222] my-10 md:my-15 lg:my-20"}
+      >
+        <TextAnimateBlur animation="slideUp" by="word" duration={1}>
+          REQUEST A QUOTE
+        </TextAnimateBlur>
+      </Typography>
 
       <Form {...form}>
         <form
@@ -142,7 +148,7 @@ const SubmitRequestForm = () => {
                     onValueChange={field.onChange}
                     defaultValue={field.value}
                     value={field.value}
-                     onBlur={field.onBlur}
+                    onBlur={field.onBlur}
                   >
                     <FormControl>
                       <SelectTrigger>
@@ -180,7 +186,7 @@ const SubmitRequestForm = () => {
                     onValueChange={field.onChange}
                     defaultValue={field.value}
                     value={field.value}
-                     onBlur={field.onBlur}
+                    onBlur={field.onBlur}
                   >
                     <FormControl>
                       <SelectTrigger>
@@ -213,7 +219,7 @@ const SubmitRequestForm = () => {
                     onValueChange={field.onChange}
                     defaultValue={field.value}
                     value={field.value}
-                     onBlur={field.onBlur}
+                    onBlur={field.onBlur}
                   >
                     <FormControl>
                       <SelectTrigger>

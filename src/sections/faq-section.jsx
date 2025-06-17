@@ -9,6 +9,7 @@ import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { PlusIcon } from "lucide-react";
 import { useState } from "react";
 import { Typography } from "@/components/ui/typography";
+import { TextAnimateBlur } from "@/components/animation/text-animate-blur";
 
 export const faqs = [
   {
@@ -49,7 +50,10 @@ const FAQSection = () => {
     <div className="flex items-center justify-center p-6 md:p-20">
       <div className="w-full">
         <Typography type="h2" className={"my-10"}>
+          <TextAnimateBlur animation="blurInUp" by="line" duration={1}>
+
           FREQUENTLY ASKED QUESTIONS (FAQs)
+          </TextAnimateBlur>
         </Typography>
         <div className="mt-6 w-full grid md:grid-cols-1 gap-x-10">
           <Accordion

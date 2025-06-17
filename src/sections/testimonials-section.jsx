@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import { TextAnimateBlur } from "@/components/animation/text-animate-blur";
 
 const testimonials = [
   {
@@ -172,7 +173,9 @@ const TestimonialSection = () => {
             Join other Sun harvesters
           </Typography>
           <Typography type="h3" className="mb-4">
-            LOREM IPSUM DOLOR SIT AMET
+            <TextAnimateBlur animation="blurInUp" by="word" duration={1}>
+              LOREM IPSUM DOLOR SIT AMET
+            </TextAnimateBlur>
           </Typography>
           <Typography className="font-[300] mb-4 text-white max-w-xl">
             Dui euismod iaculis libero, aliquet vitae et elementumorttitor.

@@ -1,3 +1,4 @@
+import { TextAnimateBlur } from "@/components/animation/text-animate-blur";
 import { Button } from "@/components/ui/button";
 import Gradient from "@/components/ui/gradient";
 import { Typography } from "@/components/ui/typography";
@@ -14,7 +15,9 @@ const TwoPersonSection = () => {
           <div className="flex flex-col justify-between pb-20 pt-8 md:pb-40 md:pt-12 px-6 md:px-12 relative">
             <div className="space-y-6">
               <Typography type="h2" className={"text-primary"}>
-                Lorem ipsum dolor sit amet consectetur. Dignissim tellus.
+                <TextAnimateBlur animation="blurInUp" by="word" duration={1}>
+                  Lorem ipsum dolor sit amet consectetur. Dignissim tellus.
+                </TextAnimateBlur>
               </Typography>
               <Typography className={"font-[400]"}>
                 Lorem ipsum dolor sit amet consectetur. In malesuada morbi mi
@@ -57,7 +60,9 @@ const TwoPersonSection = () => {
           {/* Right Content */}
           <div className="w-full h-full relative">
             <Image
-              src={"https://webbywolf-frontend.vercel.app/images/two-person.png"}
+              src={
+                "https://webbywolf-frontend.vercel.app/images/two-person.png"
+              }
               alt="2-person"
               className="w-[550px] h-full object-cover md:h-full md:absolute md:-top-15 md:right-2"
               width={500}
