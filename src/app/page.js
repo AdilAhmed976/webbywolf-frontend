@@ -20,7 +20,7 @@ import TwoPersonSection from "@/sections/two-person";
 
 export default function Home() {
   return (
-    <>
+    <div className="overflow-hidden">
       <HeroSection />
       
       <BikeFeatureSection />
@@ -62,6 +62,6 @@ export default function Home() {
       <HeroCarousel />
 
       <FAQSection />
-    </>
+    </div>
   );
 }
