@@ -46,7 +46,7 @@ const BikeFeatureSection = () => {
               {/* Features List */}
               <div className="space-y-4 my-4">
                 {features.map((item, idx) => (
-                  <div key={idx} className="flex gap-4 items-center">
+                  <div key={idx} className="flex flex-col items-start md:items-center md:flex-row gap-4 items-center">
                     <Image
                       src={item.Image}
                       alt={item.alt || "feature Image"}

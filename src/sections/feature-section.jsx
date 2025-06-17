@@ -33,7 +33,7 @@ const FeatureSection = () => {
       <section className="bg-white shadow-custom  ml-0 md:ml-20 space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Left Content */}
-          <div className="flex flex-col justify-between p-8">
+          <div className="flex flex-col justify-between p-0 md:p-8">
             <div className="space-y-4">
               <Typography type="h5" className={"text-primary"}>
                 Lorem ipsum dolor sit

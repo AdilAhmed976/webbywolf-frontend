@@ -4,25 +4,44 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Zap } from "lucide-react";
+import { useEffect, useState } from "react";
+import clsx from "clsx";
 
+const navLinks = [
+  {
+    label: "Features",
+    href: "/features",
+    items: [{ label: "Features", href: "/features" }],
+  },
+  { label: "Testimonials", href: "/testimonials", items: [] },
+  { label: "Pricing", href: "/pricing", items: [] },
+  { label: "Contact", href: "/contact", items: [] },
+];
 export default function Header() {
-  const navLinks = [
-    {
-      label: "Features",
-      href: "/features",
-      items: [{ label: "Features", href: "/features" }],
-    },
-    { label: "Testimonials", href: "/testimonials", items: [] },
-    { label: "Pricing", href: "/pricing", items: [] },
-    { label: "Contact", href: "/contact", items: [] },
-  ];
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50 w-full md:w-full bg-white md:bg-transparent border-b md:border-none shadow-lg md:shadow-none">
+    <header 
+    // className="fixed top-0 inset-x-0 z-50 w-full md:w-full bg-white md:bg-transparent border-b md:border-none shadow-lg md:shadow-none"
+    className={clsx(
+        "fixed top-0 inset-x-0 z-50 w-full transition-all duration-300",
+        scrolled
+          ? "bg-white shadow-xl rounded-full md:rounded-full fixed top-2 md:top-6 !w-[90%] mx-auto "
+          : "bg-transparent md:bg-transparent border-none shadow-none"
+      )}
+    >
       <div className="container flex h-16 items-center justify-between p-2 md:p-4 lgp-6">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 p-2">
-        
           <span className="text-xl font-bold">Logo</span>
         </Link>
 
@@ -54,7 +73,7 @@ export default function Header() {
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon">
+              <Button variant="outline" size="icon" className={"border-none"}>
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
