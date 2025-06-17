@@ -8,11 +8,13 @@ import BikeGallerySection from "@/sections/bike-gallery-section";
 import BlogSection from "@/sections/blog-section";
 import DownloadAppSection from "@/sections/download-app-section";
 import FeatureSection from "@/sections/feature-section";
+import FeatureToggleSection from "@/sections/feature-toggle-section";
 import HeroSection from "@/sections/hero-section";
 import Customers from "@/sections/our-customers";
 import SubmitRequestForm from "@/sections/submit-request-form";
 import TestimonialSection from "@/sections/testimonials-section";
 import TwoBikersSection from "@/sections/two-bikers-section";
+import TwoPersonSection from "@/sections/two-person";
 
 export default function Home() {
   return (
@@ -49,6 +51,11 @@ export default function Home() {
       <TwoBikersSection />
 
       <TestimonialSection />
+      
+      <FeatureToggleSection />
+
+      <TwoPersonSection />
+
     </>
   );
 }
