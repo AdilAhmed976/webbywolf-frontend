@@ -31,6 +31,7 @@ const BikeGallerySection = () => {
               width={200}
               className="w-full h-full object-cover"
               alt="bike1"
+              priority
             />
           </div>
           <div className="h-full w-full col-span-1">
@@ -40,6 +41,7 @@ const BikeGallerySection = () => {
               width={200}
               className="w-full h-full object-cover"
               alt="bike2"
+              priority
             />
           </div>
           <div className="h-full w-full col-span-2">
@@ -49,6 +51,7 @@ const BikeGallerySection = () => {
               width={200}
               className="w-full h-full object-cover"
               alt="bike3"
+              priority
             />
           </div>
         </div>
@@ -63,6 +66,7 @@ const BikeGallerySection = () => {
             width={200}
             className="w-full h-full object-cover"
             alt="bike4"
+            priority
           />
         </div>
         <div className="h-full w-full col-span-3">
@@ -72,6 +76,7 @@ const BikeGallerySection = () => {
             width={200}
             className="w-full h-[240px] object-cover"
             alt="bike5"
+            priority
           />
         </div>
         <div className="h-full w-full col-span-4">
@@ -81,6 +86,7 @@ const BikeGallerySection = () => {
             width={400}
             className="w-full h-full object-cover"
             alt="bike6"
+            priority
           />
         </div>
         <div className="h-full w-full col-span-1">
@@ -90,6 +96,7 @@ const BikeGallerySection = () => {
             width={200}
             className="w-full h-full object-cover"
             alt="bike7"
+            priority
           />
         </div>
         <div className="h-full w-full col-span-3">
@@ -99,6 +106,7 @@ const BikeGallerySection = () => {
             width={200}
             className="w-full h-full object-cover"
             alt="bike8"
+            priority
           />
         </div>
       </div>

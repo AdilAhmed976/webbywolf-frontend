@@ -53,6 +53,7 @@ const BikeFeatureSection = () => {
                       width={146}
                       height={146}
                       className="object-cover"
+                      priority
                     />
                     <Typography type="label">{item.text}</Typography>
                   </div>
@@ -80,6 +81,7 @@ const BikeFeatureSection = () => {
               className="w-full h-full object-cover"
               width={"500"}
               height={"500"}
+              priority
             />
           </div>
         </div>

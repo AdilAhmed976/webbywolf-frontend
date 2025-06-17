@@ -62,6 +62,7 @@ const TwoPersonSection = () => {
               className="w-[550px] h-full object-cover md:h-full md:absolute md:-top-15 md:right-2"
               width={500}
               height={500}
+              priority
             />
           </div>
         </div>

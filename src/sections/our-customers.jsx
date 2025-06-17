@@ -37,6 +37,7 @@ const Customers = () => {
                   width={130}
                   height={130}
                   className="object-contain"
+                  priority
                 />
               </div>
             ))}

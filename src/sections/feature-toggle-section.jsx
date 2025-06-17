@@ -63,6 +63,7 @@ const FeatureToggleSection = () => {
               className="w-full h-[400px] object-cover"
               width={500}
               height={500}
+              priority
             />
           </div>
         </div>

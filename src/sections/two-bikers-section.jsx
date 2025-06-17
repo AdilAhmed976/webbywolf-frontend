@@ -38,6 +38,7 @@ const TwoBikersSection = () => {
               className="w-full h-full object-cover md:h-[500px] md:absolute md:-top-15 md:right-0"
               width={500}
               height={500}
+              priority
             />
           </div>
           {/* Right Content */}

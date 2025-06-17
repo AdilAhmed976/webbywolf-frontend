@@ -65,6 +65,7 @@ const HeroCarousel = () => {
                   width={1200}
                   height={500}
                   className="w-full md:w-[60%] h-[400px] object-cover"
+                  priority
                 />
 
                 <div className="bg-white relative md:absolute md:top-4 md:top-20 right-1/2 md:right-8 translate-x-1/2 md:translate-x-0 w-full md:w-[46%] shadow-xl">

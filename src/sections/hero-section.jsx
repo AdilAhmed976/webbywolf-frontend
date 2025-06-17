@@ -55,10 +55,11 @@ const HeroSection = () => {
       >
         <Image
           src={`/images/hero-bg.png`}
-          alt="Motorbike"
+          alt="hero-image"
           className="w-full h-full object-cover"
           width={"500"}
           height={"500"}
+          priority
         />
       </div>
     </div>

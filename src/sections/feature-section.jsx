@@ -56,6 +56,7 @@ const FeatureSection = () => {
                       width={36}
                       height={36}
                       className="object-cover"
+                      priority
                     />
                     <div>
                       <Typography className="font-[600]">
@@ -79,6 +80,7 @@ const FeatureSection = () => {
               className="w-full h-full object-contain"
               width={"500"}
               height={"500"}
+              priority
             />
           </div>
         </div>

@@ -62,6 +62,7 @@ const BlogSection = () => {
               src={post.image}
               alt={post.title}
               className="w-full h-[205px] object-cover rounded-md mb-4"
+              priority
             />
             <div className="p-4">
               <Typography className="text-lg font-semibold mb-2">

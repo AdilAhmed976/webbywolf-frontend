@@ -28,6 +28,7 @@ const DownloadAppSection = () => {
                 className="h-12"
                 height={12}
                 width={180}
+                priority
               />
             </a>
             <a href="#" className="inline-block">
@@ -37,6 +38,7 @@ const DownloadAppSection = () => {
                 className="h-12"
                 height={12}
                 width={180}
+                priority
               />
             </a>
           </div>
@@ -49,6 +51,7 @@ const DownloadAppSection = () => {
             height={1000}
             width={1000}
             className="object-cover"
+            priority
           />
         </div>
       </div>

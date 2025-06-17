@@ -211,6 +211,7 @@ const TestimonialSection = () => {
                       width={40}
                       height={40}
                       className="rounded-full h-[60px] w-[60px] object-cover"
+                      priority
                     />
                     <Typography className="text-black font-medium text-sm">
                       {testimonial.name}
