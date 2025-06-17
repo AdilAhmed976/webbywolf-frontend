@@ -54,7 +54,9 @@ const FeatureSection = () => {
                 {features.map((item, idx) => (
                   <div key={idx} className="flex gap-4 items-center">
                     <Image
-                      src={"https://webbywolf-frontend.vercel.app/images/icon.png"}
+                      src={
+                        "https://webbywolf-frontend.vercel.app/images/icon.png"
+                      }
                       alt={item.alt || "feature Image"}
                       width={36}
                       height={36}
@@ -78,7 +80,7 @@ const FeatureSection = () => {
           {/* Right Image */}
           <div className="w-full h-full">
             <Image
-              src={`/Images/person.png`}
+              src={"https://webbywolf-frontend.vercel.app/images/person.png"}
               alt="Motorbike-2"
               className="w-full h-full object-contain"
               width={"500"}

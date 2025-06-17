@@ -33,7 +33,7 @@ const TwoBikersSection = () => {
           {/* Left Image */}
           <div className="w-full h-full relative">
             <Image
-              src={`/Images/two-bikers.png`}
+              src={"https://webbywolf-frontend.vercel.app/images/two-bikers.png"}
               alt="bikers"
               className="w-full h-full object-cover md:h-[500px] md:absolute md:-top-15 md:right-0"
               width={500}
