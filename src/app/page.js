@@ -7,6 +7,7 @@ import BikeFeatureSection from "@/sections/bike-feature-section";
 import BikeGallerySection from "@/sections/bike-gallery-section";
 import BlogSection from "@/sections/blog-section";
 import DownloadAppSection from "@/sections/download-app-section";
+import FAQSection from "@/sections/faq-section";
 import FeatureSection from "@/sections/feature-section";
 import FeatureToggleSection from "@/sections/feature-toggle-section";
 import HeroCarousel from "@/sections/hero-carousel";
@@ -58,6 +59,8 @@ export default function Home() {
       <TwoPersonSection />
 
       <HeroCarousel />
+
+      <FAQSection />
     </>
   );
 }
