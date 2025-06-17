@@ -9,6 +9,7 @@ import BlogSection from "@/sections/blog-section";
 import DownloadAppSection from "@/sections/download-app-section";
 import FeatureSection from "@/sections/feature-section";
 import FeatureToggleSection from "@/sections/feature-toggle-section";
+import HeroCarousel from "@/sections/hero-carousel";
 import HeroSection from "@/sections/hero-section";
 import Customers from "@/sections/our-customers";
 import SubmitRequestForm from "@/sections/submit-request-form";
@@ -51,11 +52,12 @@ export default function Home() {
       <TwoBikersSection />
 
       <TestimonialSection />
-      
+
       <FeatureToggleSection />
 
       <TwoPersonSection />
 
+      <HeroCarousel />
     </>
   );
 }
