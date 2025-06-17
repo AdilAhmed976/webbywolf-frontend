@@ -1,13 +1,27 @@
 import {
+  bottomCardVariants,
   leftCardVariants,
-  leftListItemVariants,
-  listItemVariants,
   rightCardVariants,
-  rightListItemVariants,
+  topCardVariants,
 } from "@/common/animation-variants";
 import React from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
+
+const getVariant = (position) => {
+  switch (position) {
+    case "left":
+      return leftCardVariants;
+    case "right":
+      return rightCardVariants;
+    case "top":
+      return topCardVariants;
+    case "bottom":
+      return bottomCardVariants;
+    default:
+      return rightCardVariants; // fallback
+  }
+};
 
 const AnimatedCard = ({
   position = "right",
@@ -18,8 +32,7 @@ const AnimatedCard = ({
   once = false,
   ...rest
 }) => {
-  const selectedPosition =
-    position === "right" ? rightListItemVariants : leftListItemVariants;
+  const selectedPosition = getVariant(position);
 
   return (
     <motion.div
