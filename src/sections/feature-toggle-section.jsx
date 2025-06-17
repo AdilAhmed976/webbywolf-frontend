@@ -58,7 +58,7 @@ const FeatureToggleSection = () => {
           {/* Right Content */}
           <div className="w-full h-full p-0 md:p-10">
             <Image
-              src={`/Images/hand-shake.png`}
+              src={"https://webbywolf-frontend.vercel.app/images/hand-shake.png"}
               alt="hand-shake"
               className="w-full h-[400px] object-cover"
               width={500}
