@@ -7,20 +7,19 @@ import { Typography } from "@/components/ui/typography";
 
 export default function Footer() {
   return (
-    <footer className={cn("w-full border-t bg-gray-100 py-8 md:py-12")}>
+    <footer className={cn("bg-[#171E2B] w-full border-t py-12 md:py-20")}>
       <div className="container px-4 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Branding */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <Zap className="h-6 w-6 text-primary" />
-              <Typography type="h3" className="font-bold">
-                Get Set Pin
+              <Typography type="h3" className="font-medium text-white">
+                Logo
               </Typography>
             </div>
 
-            <Typography className="text-sm text-muted-foreground">
-              The Professional’s Choice for Smarter Pins.
+            <Typography className="text-sm text-white">
+             Lorem ipsum dolor sit amet consectetur
             </Typography>
             <div className="flex gap-4">
               {[
@@ -33,7 +32,7 @@ export default function Footer() {
                   target="_blank"
                   key={i}
                   href={socialMedia?.href}
-                  className="text-muted-foreground hover:text-foreground"
+                  className="text-white"
                 >
                   {socialMedia?.icon}
                   <span className="sr-only">{socialMedia.name}</span>
@@ -72,45 +71,24 @@ export default function Footer() {
           />
         </div>
 
-        {/* Bottom Footer */}
-        <div className="mt-10 border-t pt-6 flex flex-col md:flex-row justify-between items-center">
-          <Typography className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} StreamLine. All rights reserved.
-          </Typography>
-          <div className="flex gap-4 mt-4 md:mt-0">
-            {[
-              { name: "Privacy Policy", href: "#" },
-              { name: "Terms of Service", href: "#" },
-              { name: "Cookie Policy", href: "#" },
-            ].map((item, i) => (
-              <Link
-                key={i}
-                href={item?.href}
-                className="text-xs text-muted-foreground hover:text-foreground"
-              >
-                {item?.name}
-              </Link>
-            ))}
-          </div>
-        </div>
+       
       </div>
     </footer>
   );
 }
 
-
 function FooterColumn({ title, columnsData }) {
   return (
     <div className="space-y-4">
-      <Typography type="h4" className="text-sm font-medium">
+      <Typography type="h6" className="text-sm font-medium text-white">
         {title}
       </Typography>
-      <ul className="space-y-2 text-sm">
+      <ul className="space-y-4 text-sm">
         {columnsData.map((item, i) => (
           <li key={i}>
             <Link
               href={item.href}
-              className="text-muted-foreground hover:text-foreground"
+              className="text-[#ffff]"
             >
               {item.name}
             </Link>
