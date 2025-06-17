@@ -34,7 +34,7 @@ const TwoBikersSection = () => {
           <div className="w-full h-full relative">
             <Image
               src={`/Images/two-bikers.png`}
-              alt="2-bikers"
+              alt="bikers"
               className="w-full h-full object-cover md:h-[500px] md:absolute md:-top-15 md:right-0"
               width={500}
               height={500}
