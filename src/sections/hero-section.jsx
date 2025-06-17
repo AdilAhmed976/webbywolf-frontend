@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <div className="relative  min-h-[70vh] [sm:min-h-screen flex">
       {/* Left: Content */}
-      <div className="w-full sm:w-1/2 relative flex flex-col gap-4 justify-center px-12 sm:px-12 z-10">
+      <div className="w-full sm:w-1/2 relative flex flex-col gap-4 justify-center px-8 py-24 md:py-8 sm:px-12 z-10">
         <Typography className={"w-full md:w-[60%]"} type="h1">
           Lorem ipsum dolor sit amet
         </Typography>
@@ -25,7 +25,7 @@ const HeroSection = () => {
           <Input
             type="text"
           />
-          <Button>
+          <Button className={"h-11"}>
             Submit
             <ArrowRight />
           </Button>

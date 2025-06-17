@@ -18,12 +18,12 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50 w-full md:w-full ">
+    <header className="fixed top-0 inset-x-0 z-50 w-full md:w-full bg-white md:bg-transparent border-b md:border-none shadow-lg md:shadow-none">
       <div className="container flex h-16 items-center justify-between p-2 md:p-4 lgp-6">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 p-2">
-          <Zap className="h-6 w-6 text-primary" />
-          <span className="text-xl font-bold">Get Set Pin</span>
+        
+          <span className="text-xl font-bold">Logo</span>
         </Link>
 
         {/* Desktop Navigation */}
