@@ -5,7 +5,7 @@ import React from "react";
 const blogPosts = [
   {
     id: 1,
-    image: "/images/city.png",
+    image: "https://webbywolf-frontend.vercel.app/images/city.png",
     title: "Lorem ipsum dolor sit amet consectetur.",
     description:
       "Lorem ipsum dolor sit amet consectetur. Nunc gravida consequat faucibus cursus nisi. Nunc montes molestie a vitae vulputate. Phasellus in pulvinar et vitae. Mi eget lectus nec et. Libero iaculis diam nam mauris a eget. Quam nibh rhoncus rhoncus enim venenatis bibendum.",
@@ -13,7 +13,7 @@ const blogPosts = [
   },
   {
     id: 2,
-    image: "/images/monk.png",
+    image: "https://webbywolf-frontend.vercel.app/images/monk.png",
     title: "Lorem ipsum dolor sit amet consectetur.",
     description:
       "Lorem ipsum dolor sit amet consectetur. Nunc gravida consequat faucibus cursus nisi. Nunc montes molestie a vitae vulputate. Phasellus in pulvinar et vitae. Mi eget lectus nec et. Libero iaculis diam nam mauris a eget. Quam nibh rhoncus rhoncus enim venenatis bibendum.",
@@ -21,7 +21,7 @@ const blogPosts = [
   },
   {
     id: 3,
-    image: "/images/girl.png",
+    image: "https://webbywolf-frontend.vercel.app/images/girl.png",
     title: "Lorem ipsum dolor sit amet consectetur.",
     description:
       "Lorem ipsum dolor sit amet consectetur. Nunc gravida consequat faucibus cursus nisi. Nunc montes molestie a vitae vulputate. Phasellus in pulvinar et vitae. Mi eget lectus nec et. Libero iaculis diam nam mauris a eget. Quam nibh rhoncus rhoncus enim venenatis bibendum.",
@@ -29,7 +29,7 @@ const blogPosts = [
   },
   {
     id: 4,
-    image: "/images/orange.png",
+    image: "https://webbywolf-frontend.vercel.app/images/orange.png",
     title: "Lorem ipsum dolor sit amet consectetur.",
     description:
       "Lorem ipsum dolor sit amet consectetur. Nunc gravida consequat faucibus cursus nisi. Nunc montes molestie a vitae vulputate. Phasellus in pulvinar et vitae. Mi eget lectus nec et. Libero iaculis diam nam mauris a eget. Quam nibh rhoncus rhoncus enim venenatis bibendum.",

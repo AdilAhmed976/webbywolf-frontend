@@ -23,7 +23,7 @@ const DownloadAppSection = () => {
           <div className="flex flex-wrap justify-center md:justify-start gap-4">
             <a href="#" className="inline-block">
               <Image
-                src="/images/google-play.png"
+                src="https://webbywolf-frontend.vercel.app/images/google-play.png"
                 alt="Get it on Google Play"
                 className="h-12"
                 height={12}
@@ -33,7 +33,7 @@ const DownloadAppSection = () => {
             </a>
             <a href="#" className="inline-block">
               <Image
-                src="/images/app-store.png"
+                src="https://webbywolf-frontend.vercel.app/images/app-store.png"
                 alt="Download on the App Store"
                 className="h-12"
                 height={12}
@@ -46,7 +46,7 @@ const DownloadAppSection = () => {
 
         <div className="mt-10 md:mt-0 md:ml-12">
           <Image
-            src={"/images/hand.png"}
+            src={"https://webbywolf-frontend.vercel.app/images/hand.png"}
             alt="hand-png"
             height={1000}
             width={1000}

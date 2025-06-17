@@ -26,7 +26,7 @@ const BikeGallerySection = () => {
           <div className="h-full w-full col-span-1" />
           <div className="h-full w-full col-span-1">
             <Image
-              src="/images/gallery-thumb-1.png"
+              src="https://webbywolf-frontend.vercel.app/images/gallery-thumb-1.png"
               height={200}
               width={200}
               className="w-full h-full object-cover"
@@ -36,7 +36,7 @@ const BikeGallerySection = () => {
           </div>
           <div className="h-full w-full col-span-1">
             <Image
-              src="/images/gallery-thumb-2.png"
+              src="https://webbywolf-frontend.vercel.app/images/gallery-thumb-2.png"
               height={200}
               width={200}
               className="w-full h-full object-cover"
@@ -46,7 +46,7 @@ const BikeGallerySection = () => {
           </div>
           <div className="h-full w-full col-span-2">
             <Image
-              src="/images/gallery-thumb-3.png"
+              src="https://webbywolf-frontend.vercel.app/images/gallery-thumb-3.png"
               height={200}
               width={200}
               className="w-full h-full object-cover"
@@ -61,7 +61,7 @@ const BikeGallerySection = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
         <div className="h-full w-full col-span-1 md:pt-6">
           <Image
-            src="/images/gallery-thumb-4.png"
+            src="https://webbywolf-frontend.vercel.app/images/gallery-thumb-4.png"
             height={200}
             width={200}
             className="w-full h-full object-cover"
@@ -71,7 +71,7 @@ const BikeGallerySection = () => {
         </div>
         <div className="h-full w-full col-span-3">
           <Image
-            src="/images/gallery-thumb-5.png"
+            src="https://webbywolf-frontend.vercel.app/images/gallery-thumb-5.png"
             height={200}
             width={200}
             className="w-full h-[240px] object-cover"
@@ -81,7 +81,7 @@ const BikeGallerySection = () => {
         </div>
         <div className="h-full w-full col-span-4">
           <Image
-            src="/images/gallery-thumb-6.png"
+            src="https://webbywolf-frontend.vercel.app/images/gallery-thumb-6.png"
             height={400}
             width={400}
             className="w-full h-full object-cover"
@@ -91,7 +91,7 @@ const BikeGallerySection = () => {
         </div>
         <div className="h-full w-full col-span-1">
           <Image
-            src="/images/gallery-thumb-7.png"
+            src="https://webbywolf-frontend.vercel.app/images/gallery-thumb-7.png"
             height={200}
             width={200}
             className="w-full h-full object-cover"
@@ -101,7 +101,7 @@ const BikeGallerySection = () => {
         </div>
         <div className="h-full w-full col-span-3">
           <Image
-            src="/images/gallery-thumb-2.png"
+            src="https://webbywolf-frontend.vercel.app/images/gallery-thumb-2.png"
             height={200}
             width={200}
             className="w-full h-full object-cover"

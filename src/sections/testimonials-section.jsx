@@ -37,7 +37,7 @@ const testimonials = [
     ),
     text: "Purus maecenas quis elit eu, aliquet. Tellus porttitor ut sollicitudin sit non fringilla. Quam nunc volutpat senectus neque eget amet pharetra, euismod. Tempus, nunc, molestie imperdiet curabitur commodo euismod.",
     name: "Jane Cooper",
-    image: "/images/jane.jpg",
+    image: "https://webbywolf-frontend.vercel.app/images/jane.jpg",
   },
   {
     icon: (
@@ -74,7 +74,7 @@ const testimonials = [
 
     text: "Vehicula sit sit pharetra bibendum ut risus accumsan. Purus, in metus, enim, ipsum morbi euismod pellentesque. Mattis pharetra accumsan eget est mi enim, id. Sit quam tortor eu tellus non, in euismod integer.",
     name: "Ralph Edwards",
-    image: "/images/ralph.jpg",
+    image: "https://webbywolf-frontend.vercel.app/images/ralph.jpg",
   },
   {
     icon: (
@@ -94,7 +94,7 @@ const testimonials = [
     ),
     text: "Viverra lacus suspendisse elit, adipiscing orci, non turpis etiam sapien. Viverra blandit sem neque pretium. Duis enim semper fermentum consequat aenean libero. Blandit porta leo condimentum dolor, nisi, aliquet ante laoreet.",
     name: "Courtney Henry",
-    image: "/images/courtney.jpg",
+    image: "https://webbywolf-frontend.vercel.app/images/courtney.jpg",
   },
   {
     icon: (
@@ -130,7 +130,7 @@ const testimonials = [
     ),
     text: "Hendrerit augue ut nunc, quis integer netus. Diam rhoncus magnis habitant. Egestas amet habitasse tellus ornare. Hendrerit augue ut nunc, quis integer netus. Egestas amet habitasse tellus ornare.",
     name: "Cameron Williamson",
-    image: "/images/cameron.jpg",
+    image: "https://webbywolf-frontend.vercel.app/images/cameron.jpg",
   },
   {
     icon: (
@@ -159,7 +159,7 @@ const testimonials = [
     ),
     text: "Hendrerit augue ut nunc, quis integer netus. Diam rhoncus magnis habitant. Egestas amet habitasse tellus ornare. Hendrerit augue ut nunc, quis integer netus. Egestas amet habitasse tellus ornare.",
     name: "Cameron Williamson",
-    image: "/images/cameron.jpg",
+    image: "https://webbywolf-frontend.vercel.app/images/cameron.jpg",
   },
 ];
 

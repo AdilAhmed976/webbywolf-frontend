@@ -8,17 +8,17 @@ import Image from "next/image";
 
 const features = [
   {
-    Image: "/Images/thumb-1.png",
+    Image: "https://webbywolf-frontend.vercel.app/images/thumb-1.png",
     text: "Lorem ipsum dolor sit amet consectetur. Vestibulum ornare fermentum feugiat.",
     alt: "BikeFeatureSection-1",
   },
   {
-    Image: "/Images/thumb-2.png",
+    Image: "https://webbywolf-frontend.vercel.app/images/thumb-2.png",
     text: "Lorem ipsum dolor sit amet consectetur. Dictum at ac tellus faucibus urna ullamcorper id dui cursus. Venenatis.",
     alt: "BikeFeatureSection-2",
   },
   {
-    Image: "/Images/thumb-3.png",
+    Image: "https://webbywolf-frontend.vercel.app/images/thumb-3.png",
     text: "Lorem ipsum dolor sit amet consectetur. Vestibulum nisl morbi metus gravida eu facilisi enim. Ut diam auctor tortor tincidunt.",
     alt: "BikeFeatureSection-3",
   },
@@ -82,7 +82,7 @@ const BikeFeatureSection = () => {
           {/* Right Image */}
           <div className="w-full h-full md:pr-4">
             <Image
-              src={`/Images/bike.png`}
+              src={`https://webbywolf-frontend.vercel.app/images/bike.png`}
               alt="Motorbike-rights"
               className="w-full h-full object-cover"
               width={"500"}

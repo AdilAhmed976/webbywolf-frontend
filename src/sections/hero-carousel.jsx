@@ -16,19 +16,19 @@ import { cn } from "@/lib/utils"; // optional helper for conditional styling
 
 const slides = [
   {
-    image: "/images/hero-carousel-thumb-1.png",
+    image: "https://webbywolf-frontend.vercel.app/images/hero-carousel-thumb-1.png",
     title: "Artist & Investor",
     description:
       "Enim sagittis, sit porttitor morbi lobortis amet, libero adipiscing auctor. Malesuada tristique libero, id netus tincidunt. Egestas ac arcu amet nisl quis est ...",
   },
   {
-    image: "/images/hero-carousel-thumb-1.png",
+    image: "https://webbywolf-frontend.vercel.app/images/hero-carousel-thumb-1.png",
     title: "Traveler & Adventurer",
     description:
       "Vitae lectus nec, rhoncus massa blandit. Tempus malesuada ac porta adipiscing amet, in habitant quam. Integer justo nulla blandit amet facilisis.",
   },
   {
-    image: "/images/hero-carousel-thumb-1.jpg",
+    image: "https://webbywolf-frontend.vercel.app/images/hero-carousel-thumb-1.jpg",
     title: "Visionary Explorer",
     description:
       "Orci pulvinar suscipit sit vestibulum lectus. Mi viverra id sit at adipiscing. Euismod lorem pellentesque commodo justo, vel nullam vitae eget.",
