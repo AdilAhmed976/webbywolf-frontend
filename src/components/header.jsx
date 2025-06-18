@@ -7,22 +7,38 @@ import { ArrowUpFromDotIcon, ChevronDownIcon, Menu, Zap } from "lucide-react";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import { Typography } from "./ui/typography";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu";
 
 const navLinks = [
   {
     label: "Features",
     href: "/features",
-    items: [{ label: "Features", href: "/features" }],
+    items: [
+      { label: "Feature", href: "/features" },
+      { label: "Feature", href: "/features" },
+    ],
   },
   {
     label: "Testimonials",
     href: "/testimonials",
-    items: [{ label: "Features", href: "/features" }],
+    items: [
+      { label: "Testimonials", href: "/testimonials" },
+      { label: "Testimonials", href: "/testimonials" },
+    ],
   },
   {
     label: "Pricing",
     href: "/pricing",
-    items: [{ label: "Features", href: "/features" }],
+    items: [],
   },
   // {
   //   label: "Contact",
@@ -63,15 +79,36 @@ export default function Header() {
           <nav className="hidden md:flex items-center gap-6 text-link">
             {navLinks.map((link) =>
               Array.isArray(link?.items) && link?.items.length > 0 ? (
-                <div
-                  key={link.href}
-                  className="flex items-center gap-2 hover:underline"
-                >
-                  <Typography type="p" className={"text-link"}>
-                    {link.label}
-                  </Typography>
-                  <ChevronDownIcon className="size-4" />
-                </div>
+                // <div
+                //   key={link.href}
+                //   className="flex items-center gap-2 hover:underline"
+                // >
+                //   <Typography type="p" className={"text-link"}>
+                //     {link.label}
+                //   </Typography>
+                //   <ChevronDownIcon className="size-4" />
+                // </div>
+                <NavigationMenu>
+                  <NavigationMenuList>
+                    <NavigationMenuItem>
+                      <NavigationMenuTrigger>
+                        <Typography type="p" className={"text-link"}>
+                          {link.label}
+                        </Typography>
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent >
+                        {Array.isArray(link?.items) &&
+                          link?.items?.map((subItem) => {
+                            return (
+                              <NavigationMenuLink>
+                                {subItem?.label}
+                              </NavigationMenuLink>
+                            );
+                          })}
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
+                  </NavigationMenuList>
+                </NavigationMenu>
               ) : (
                 <Typography type="p" className={"text-link"}>
                   <Link
