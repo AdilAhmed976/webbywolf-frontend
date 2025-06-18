@@ -10,6 +10,7 @@ import { PlusIcon } from "lucide-react";
 import { useState } from "react";
 import { Typography } from "@/components/ui/typography";
 import { TextAnimateBlur } from "@/components/animation/text-animate-blur";
+import AnimatedListItem from "@/components/animation/animated-list-item";
 
 export const faqs = [
   {
@@ -51,8 +52,7 @@ const FAQSection = () => {
       <div className="w-full">
         <Typography type="h2" className={"my-10"}>
           <TextAnimateBlur animation="blurInUp" by="line" duration={1}>
-
-          FREQUENTLY ASKED QUESTIONS (FAQs)
+            FREQUENTLY ASKED QUESTIONS (FAQs)
           </TextAnimateBlur>
         </Typography>
         <div className="mt-6 w-full grid md:grid-cols-1 gap-x-10">
@@ -66,17 +66,23 @@ const FAQSection = () => {
             {faqs?.map(({ question, answer }, index) => (
               <AccordionItem key={question} value={`question-${index}`}>
                 <AccordionPrimitive.Header className="flex">
-                  <AccordionPrimitive.Trigger
-                    className={cn(
-                      "flex flex-1 items-center justify-between py-6 font-semibold transition-all hover:underline [&[data-state=open]>svg]:rotate-45",
-                      "text-start text-md hover:cursor-pointer"
-                    )}
+                  <AnimatedListItem
+                    index={index}
+                    transitionDuration={0.6}
+                    delayStep={0.6}
                   >
-                    <Typography className={"font-semibold"}>
-                      {question}
-                    </Typography>
-                    <PlusIcon className="h-5 w-5 shrink-0 text-muted-foreground transition-transform duration-200" />
-                  </AccordionPrimitive.Trigger>
+                    <AccordionPrimitive.Trigger
+                      className={cn(
+                        "flex flex-1 items-center justify-between py-6 font-semibold transition-all hover:underline [&[data-state=open]>svg]:rotate-45",
+                        "text-start text-md hover:cursor-pointer"
+                      )}
+                    >
+                      <Typography className={"font-semibold"}>
+                        {question}
+                      </Typography>
+                      <PlusIcon className="h-5 w-5 shrink-0 text-muted-foreground transition-transform duration-200" />
+                    </AccordionPrimitive.Trigger>
+                  </AnimatedListItem>
                 </AccordionPrimitive.Header>
                 <AccordionContent className="py-3">
                   <Typography className={"max-w-4xl"}>{answer}</Typography>
