@@ -24,6 +24,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Typography } from "@/components/ui/typography";
 import { toast } from "sonner";
 import { TextAnimateBlur } from "@/components/animation/text-animate-blur";
+import { useEffect } from "react";
 // import { Checkbox } from "@/components/ui/checkbox";
 
 const formSchema = z.object({
@@ -36,14 +37,14 @@ const formSchema = z.object({
   phone: z.string().min(10, {
     message: "Phone number must be at least 10 digits.",
   }),
-  timeframe: z.string({
-    required_error: "Please select a time frame.",
+  timeframe: z.string().min(1, {
+    message: "Please select a time frame.",
   }),
-  size: z.string({
-    required_error: "Please select a size.",
+  size: z.string().min(1, {
+    message: "Please select a size.",
   }),
-  quantity: z.string({
-    required_error: "Please select a quantity.",
+  quantity: z.string().min(1, {
+    message: "Please select a quantity.",
   }),
   projectType: z.string().min(10, {
     message: "Message must be at least 10 characters.",
@@ -63,6 +64,17 @@ const SubmitRequestForm = () => {
       projectType: "",
     },
   });
+
+  useEffect(() => {
+    if (form?.formState?.errors) {
+      let errorsObj = form?.formState?.errors;
+      let errorsKeys = Object?.keys(form?.formState?.errors);
+      toast?.error(errorsObj[errorsKeys?.[0]]?.message);
+      // errorsKeys.forEach((element) => {
+      //   toast?.error(form?.formState?.errors[element]?.message);
+      // });
+    }
+  }, [form?.formState?.errors]);
 
   function onSubmit(values) {
     console.log(values);
