@@ -1,12 +1,48 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Typography } from "@/components/ui/typography";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { TextAnimateBlur } from "@/components/animation/text-animate-blur";
+import { toast } from "sonner";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+
+const formSchema = z.object({
+  email: z.string().email({
+    message: "Please enter a valid email address.",
+  }),
+});
 
 const HeroSection = () => {
+  const form = useForm({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      email: "",
+    },
+  });
+
+  useEffect(() => {
+    if (form?.formState?.errors?.email?.message) {
+      toast?.error(form?.formState?.errors?.email?.message);
+    }
+  }, [form?.formState?.errors]);
+
+  function onSubmit(values) {
+    form?.clearErrors();
+    form?.reset();
+    toast.success("Form Submitted Successfully");
+  }
   return (
     <div className="relative  min-h-[70vh] [sm:min-h-screen flex">
       {/* Left: Content */}
@@ -25,14 +61,36 @@ const HeroSection = () => {
           </TextAnimateBlur>
         </Typography>
 
-        <div className="flex items-center gap-2 mt-2">
-          <Input type="text" />
-          <Button className={"h-11"}>
-            Submit
-            <ArrowRight />
-          </Button>
-        </div>
-        <div className="mt-4 flex items-center gap-2 font-[500] text-[16px]">
+        <Form {...form}>
+          <form
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="w-full space-y-1 md:space-y-2 flex items-starts gap-2 max-w-md"
+          >
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem className={"w-full"}>
+                  <FormControl>
+                    <Input
+                      className={"!w-full !bg-white border"}
+                      placeholder=""
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <Button type="submit" className={"h-11"}>
+              Submit
+              <ArrowRight />
+            </Button>
+          </form>
+        </Form>
+
+        <div className="mt-4 flex items-center gap-2 font-[400] text-[16px]">
           <svg
             width="30"
             height="29"
@@ -50,7 +108,7 @@ const HeroSection = () => {
 
       {/* Right: Diagonal Image */}
       <div
-        className="hidden sm:block sm:w-1/2 relative overflow-hidden"
+        className="hidden sm:block sm:w-1/2 relative overflow-hidden border-none"
         style={{
           clipPath: "polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%)",
         }}
@@ -63,6 +121,7 @@ const HeroSection = () => {
           height={"500"}
           priority
         />
+        <div className="absolute bottom-0 left-0 w-full h-10 bg-[linear-gradient(180deg,rgba(255,255,255,0)_5.84%,#ffffff_30.19%)] pointer-events-none" />
       </div>
     </div>
   );
