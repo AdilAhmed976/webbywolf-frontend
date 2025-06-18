@@ -6,7 +6,7 @@ const GraphicBackgroundWrapper = ({ className, children, bgClassName }) => {
     <div className={cn("relative min-h-screen", className)}>
       <div
         className={cn(
-          "absolute inset-0 bg-[url('/images/bg-graphic.png')] bg-cover bg-center bg-no-repeat scale-x-[-1] z-0",
+          "absolute inset-0 bg-[url('/images/bg-graphic.png')] bg-cover bg-[position:30%_24%] bg-no-repeat scale-x-[-1] z-0",
           bgClassName
         )}
       />
