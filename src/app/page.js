@@ -3,6 +3,7 @@
 import AnimatedCard from "@/components/animation/animated-card";
 import BackgroundCard from "@/components/ui/background-card";
 import { Card } from "@/components/ui/card";
+import GraphicBackgroundWrapper from "@/components/ui/graphic-background-wrapper";
 import { Typography } from "@/components/ui/typography";
 import BikeFeatureSection from "@/sections/bike-feature-section";
 import BikeGallerySection from "@/sections/bike-gallery-section";
@@ -24,11 +25,16 @@ export default function Home() {
     <div className="overflow-hidden">
       <HeroSection />
 
-      <BikeFeatureSection />
+      <GraphicBackgroundWrapper bgClassName={"bg-[position:70%_24%]"}>
 
-      <FeatureSection />
+        <BikeFeatureSection />
+
+        <FeatureSection />
+
+      </GraphicBackgroundWrapper>
 
       <AnimatedCard position="top">
+
         <BackgroundCard
           imageSrc={"bike-background.png"}
           heading="Lorem ipsum dolor sit amet consectetur. Quis adipiscing purus egestas aliquam viverra mi."
@@ -37,11 +43,16 @@ export default function Home() {
             "Lorem ipsum dolor sit amet consectetur. Volutpat in dictum nec condimentum ultrices non. Ornare semper in tincidunt pellentesque cras mauris in vitae. At viverra quis eu malesuada vel et porttitor. Nulla luctus quam lacus lacus non at. Tincidunt morbi feugiat a pulvinar euismod natoque nulla ligula. Tincidunt cursus vitae leo.",
           ]}
         />
+
       </AnimatedCard>
 
       <Customers />
 
-      <BlogSection />
+      <GraphicBackgroundWrapper bgClassName={"bg-center scale-x-[1]"}>
+        
+        <BlogSection />
+
+      </GraphicBackgroundWrapper>
 
       <AnimatedCard position="right">
         <BackgroundCard
@@ -52,11 +63,15 @@ export default function Home() {
 
       <SubmitRequestForm />
 
-      <DownloadAppSection />
+      <GraphicBackgroundWrapper bgClassName={"bg-center scale-x-[1]"}>
+        
+        <DownloadAppSection />
 
-      <BikeGallerySection />
+        <BikeGallerySection />
 
-      <TwoBikersSection />
+        <TwoBikersSection />
+
+      </GraphicBackgroundWrapper>
 
       <TestimonialSection />
 
